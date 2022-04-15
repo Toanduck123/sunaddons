@@ -1,0 +1,41 @@
+<odoo>
+    <record id="kiosk_electric_number_view_tree" model="ir.ui.view">
+        <field name="name">kiosk.electric.number.tree</field>
+        <field name="model">kiosk.electric.number</field>
+        <field name="arch" type="xml">
+            <tree string="Kiosk Electric Number Tree" editable="bottom">
+                <field name="kiosk_id" />
+                <field name="name" />
+                <field name="user_id" />
+                <field name="date" />
+                <field name="number" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="kiosk_electric_number_view_search" model="ir.ui.view">
+        <field name="name">kiosk.electric.number.search</field>
+        <field name="model">kiosk.electric.number</field>
+        <field name="arch" type="xml">
+            <search string="Kiosk Electric Number Search">
+                <field name="name" />
+                <field name="user_id" />
+                <group expand="0" string="Group By">
+                    <filter string="Employee" name="grp_user" context="{'group_by': 'user_id'}" />
+                    <filter string="Kiosk" name="grp_kiosk" context="{'group_by': 'kiosk_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="kiosk_electric_number_action" model="ir.actions.act_window">
+        <field name="name">Kiosk Electric Number</field>
+        <field name="res_model">kiosk.electric.number</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="kiosk_electric_number_menu"
+     parent="kiosk_menu_root"
+     action="kiosk_electric_number_action"
+     sequence="40" />
+</odoo>

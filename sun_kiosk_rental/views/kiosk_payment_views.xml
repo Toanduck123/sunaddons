@@ -1,0 +1,110 @@
+<odoo>
+    <record id="kiosk_payment_view_tree" model="ir.ui.view">
+        <field name="name">kiosk.payment.tree</field>
+        <field name="model">kiosk.payment</field>
+        <field name="arch" type="xml">
+            <tree string="Kiosk Payment Tree">
+                <field name="name" optional="show" />
+                <field name="partner_id" optional="show" />
+                <field name="kiosk_id" optional="show" />
+                <field name="kiosk_contract_id" optional="hide" />
+                <field name="amount_total" optional="show" />
+                <field name="start_date" optional="hide" />
+                <field name="end_date" optional="hide" />
+                <field name="state" optional="show" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="kiosk_payment_view_form" model="ir.ui.view">
+        <field name="name">kiosk.payment.form</field>
+        <field name="model">kiosk.payment</field>
+        <field name="arch" type="xml">
+            <form string="Kiosk Payment Form">
+                <header>
+                        <button name="action_confirm" string="Confirm" class="btn-primary" type="object"
+                        attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                        <button name="action_send_email" string="Send Email" type="object" 
+                        attrs="{'invisible': [('state', '=', 'paymented')]}"/>
+                        <button name="action_paymented" string="Paymented" type="object" 
+                        attrs="{'invisible': [('state', '!=', 'paymented')]}" />
+                        <button name="compute_payment" string="Compute Payment" type="object" 
+                        attrs="{'invisible': [('state', '!=', 'draft')]}" />
+                        <button name="action_draft" string="Reset To Draft" type="object"/>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="start_date" />
+                            <field name="partner_id" />
+                        </group>
+                        <group>
+                            <field name="kiosk_contract_id" />
+                            <field name="kiosk_id" />
+                            <field name="end_date" />
+                            <field name="amount_total" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="List Payment Line">
+                            <field name="kiosk_payment_line_ids" >
+                                <tree editable="bottom">
+                                    <field name="cost_type_id"/>
+                                    <field name="name" />
+                                    <field name="quantity" />
+                                    <field name="price" />
+                                    <field name="sub_amount_total" />
+                                </tree>
+                            </field>
+                            <group name="note_group" col="6" class="mt-2 mt-md-0">
+                                <group colspan="4">
+                                    <field name="note" class="oe-bordered-editor" nolabel="1" placeholder="Terms and conditions..."/>
+                                </group>
+                                <group class="oe_subtotal_footer oe_right" colspan="2" name="payment_total">
+                                   <field name="amount_total" colspan="2" />
+                                </group>
+                                <div class="oe_clear"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="kiosk_payment_view_search" model="ir.ui.view">
+        <field name="name">kiosk.payment.search</field>
+        <field name="model">kiosk.payment</field>
+        <field name="arch" type="xml">
+            <search string="Kiosk Payment Search">
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="kiosk_contract_id" />
+                <field name="kiosk_id" />
+                <group expand="0" string="Group By">
+                    <filter string="Customer" name="grp_partner" context="{'group_by': 'partner_id'}" />
+                    <filter string="Kiosk Contract" name="grp_kiosk_contract" context="{'group_by': 'kiosk_contract_id'}" />
+                    <filter string="Kiosk" name="grp_kiosk" context="{'group_by': 'kiosk_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="kiosk_payment_action" model="ir.actions.act_window">
+        <field name="name">Kiosk Payment</field>
+        <field name="res_model">kiosk.payment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="kiosk_payment_menu"
+     parent="kiosk_management_menu_root"
+     action="kiosk_payment_action"
+     sequence="5" />
+</odoo>

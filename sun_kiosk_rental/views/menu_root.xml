@@ -1,0 +1,16 @@
+<odoo>
+    <menuitem id="kiosk_management_rental_menu_root" name="Kiosk Management"
+        web_icon="sun_kiosk_rental,static/description/icon.png" />
+        
+    <menuitem id="kiosk_management_menu_root"
+        name="Kiosk Management" parent="kiosk_management_rental_menu_root"
+        sequence="10"/>
+      
+    <menuitem id="kiosk_menu_root"
+        name="Kiosk" parent="kiosk_management_rental_menu_root"
+        sequence="20"/>
+        
+    <menuitem id="kiosk_rental_configuration_menu_root"
+        name="Configuration" parent="kiosk_management_rental_menu_root"
+        sequence="99"/>
+</odoo>

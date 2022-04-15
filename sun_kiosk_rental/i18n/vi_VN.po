@@ -1,0 +1,768 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sun_kiosk_rental
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-15 12:49+0000\n"
+"PO-Revision-Date: 2022-04-15 12:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_needaction
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_ids
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_exception_decoration
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_state
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_type_icon
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:res.groups,name:sun_kiosk_rental.sun_kiosk_rental_group_admin
+msgid "Administrator"
+msgstr "Quản trị"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__amount_total
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__sub_amount_total
+msgid "Amount Total"
+msgstr "Tổng tiền"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__amount
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__amount
+msgid "Amount/Month"
+msgstr "Tiền/Tháng"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_attachment_count
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_form
+msgid "Close"
+msgstr "Đóng"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_contract__state__closed
+msgid "Closed"
+msgstr "Đã đóng"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__code
+msgid "Code"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_rental_configuration_menu_root
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_form
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_payment__state__confirmed
+msgid "Confirmed"
+msgstr "Đã xác nhận"
+
+#. module: sun_kiosk_rental
+#: model:ir.model,name:sun_kiosk_rental.model_res_partner
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.contract_cost_type_action
+#: model:ir.model,name:sun_kiosk_rental.model_contract_cost_type
+#: model:ir.ui.menu,name:sun_kiosk_rental.contract_cost_type_menu
+msgid "Contract Cost Type"
+msgstr "Loại Chi phí trên hợp đồng"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.contract_cost_type_view_form
+msgid "Contract Cost Type Form"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.contract_cost_type_view_search
+msgid "Contract Cost Type Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.contract_cost_type_view_tree
+msgid "Contract Cost Type Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__contract_duration
+msgid "Contract Duration"
+msgstr "Thời hạn hợp đồng"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_res_partner__kiosk_contract_ids
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_res_users__kiosk_contract_ids
+msgid "Contracts of Kiosk"
+msgstr "Hợp đồng của Kiosk"
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.cost_type_action
+#: model:ir.model,name:sun_kiosk_rental.model_cost_type
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__cost_type_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__cost_type_id
+#: model:ir.ui.menu,name:sun_kiosk_rental.cost_type_menu
+msgid "Cost Type"
+msgstr "Loại chi phí"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.cost_type_view_form
+msgid "Cost Type Form"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.cost_type_view_search
+msgid "Cost Type Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.cost_type_view_tree
+msgid "Cost Type Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__create_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__create_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__partner_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__partner_id
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_search
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.kiosk_customer_rental_action
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_customer_rental_menu
+msgid "Customers"
+msgstr "Khách hàng"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.cost_type_view_form
+msgid "Desicription"
+msgstr "Mô tả"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__display_name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_contract__state__draft
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_payment__state__draft
+msgid "Draft"
+msgstr "Dự thảo"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__cost_type__type__electric
+msgid "Electric"
+msgstr "Điện"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_kiosk_view_form
+msgid "Electric Number"
+msgstr "Số điện"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__electric_number_count
+msgid "Electric Number Count"
+msgstr "Số phiếu điện"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__user_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__user_id
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_electric_number_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_water_number_view_search
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__end_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__end_date
+msgid "End Date"
+msgstr "Ngày kết thúc"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_follower_ids
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_partner_ids
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__activity_type_icon
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.contract_cost_type_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_electric_number_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_water_number_view_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__has_message
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.module.category,description:sun_kiosk_rental.module_Kiosk_rental_category
+msgid "Helps you manage your customer loyalty."
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__id
+msgid "ID"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_exception_icon
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__activity_exception_icon
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__message_needaction
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__message_unread
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__message_needaction
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__message_has_error
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_is_follower
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.kiosk_kiosk_action
+#: model:ir.model,name:sun_kiosk_rental.model_kiosk_kiosk
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__kiosk_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__kiosk_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__kiosk_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__kiosk_id
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_kiosk_menu
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_menu_root
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_electric_number_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_water_number_view_search
+msgid "Kiosk"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__kiosk_contract_id
+msgid "Kiosk Contact"
+msgstr "Hợp đồng Kiosk"
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.kiosk_contract_action
+#: model:ir.model,name:sun_kiosk_rental.model_kiosk_contract
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__kiosk_contract_id
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_contract_menu
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.contract_cost_type_view_search
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_search
+msgid "Kiosk Contract"
+msgstr "Hợp đồng Kiosk"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_form
+msgid "Kiosk Contract Form"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_search
+msgid "Kiosk Contract Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_tree
+msgid "Kiosk Contract Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.kiosk_electric_number_action
+#: model:ir.model,name:sun_kiosk_rental.model_kiosk_electric_number
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_electric_number_menu
+msgid "Kiosk Electric Number"
+msgstr "Số điện"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_electric_number_view_search
+msgid "Kiosk Electric Number Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_electric_number_view_tree
+msgid "Kiosk Electric Number Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_kiosk_view_form
+msgid "Kiosk Form"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_management_menu_root
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_management_rental_menu_root
+msgid "Kiosk Management"
+msgstr "Quản lý Kiosk"
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.kiosk_payment_action
+#: model:ir.model,name:sun_kiosk_rental.model_kiosk_payment
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__kiosk_payment_id
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_payment_menu
+msgid "Kiosk Payment"
+msgstr "Thanh toán Kiosk"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_form
+msgid "Kiosk Payment Form"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model,name:sun_kiosk_rental.model_kiosk_payment_line
+msgid "Kiosk Payment Line"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_search
+msgid "Kiosk Payment Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_tree
+msgid "Kiosk Payment Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.module.category,name:sun_kiosk_rental.module_Kiosk_rental_category
+msgid "Kiosk Rental"
+msgstr "Thuê Kiosk"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_kiosk_view_search
+msgid "Kiosk Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_kiosk_view_tree
+msgid "Kiosk Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.actions.act_window,name:sun_kiosk_rental.kiosk_water_number_action
+#: model:ir.model,name:sun_kiosk_rental.model_kiosk_water_number
+#: model:ir.ui.menu,name:sun_kiosk_rental.kiosk_water_number_menu
+msgid "Kiosk Water Number"
+msgstr "Số nước"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_water_number_view_search
+msgid "Kiosk Water Number Search"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_water_number_view_tree
+msgid "Kiosk Water Number Tree"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line____last_update
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__write_uid
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__write_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__cost_type_ids
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_form
+msgid "List Cost Type"
+msgstr "Danh sách các loại chi phí"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__electric_number_ids
+msgid "List Electric Numbers"
+msgstr "Danh sách chốt số điện"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_form
+msgid "List Payment Line"
+msgstr "Chi tiết thanh toán"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__water_number_ids
+msgid "List Water Numbers"
+msgstr "Danh sách chốt số nước"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_main_attachment_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_has_error
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_ids
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__my_activity_date_deadline
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__name
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_date_deadline
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_summary
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_type_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_needaction_counter
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_has_error_counter
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__message_needaction_counter
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__message_has_error_counter
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__message_unread_counter
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_electric_number__number
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_water_number__number
+msgid "Number on Clock"
+msgstr "Số trên đồng hồ"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_contract__state__opened
+msgid "Opened"
+msgstr "Đã mở"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__cost_type__type__other
+msgid "Other"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__kiosk_payment_line_ids
+msgid "Payment Lines"
+msgstr "Dòng thanh toán"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_payment__state__paymented
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_form
+msgid "Paymented"
+msgstr "Đã thanh toán"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__image
+msgid "Photo"
+msgstr "Ảnh"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__quantity
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__representer_id
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_search
+msgid "Representer"
+msgstr "Người ký"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_contract_view_form
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_form
+msgid "Reset To Draft"
+msgstr "Thiết lập về dự thảo"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__activity_user_id
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__activity_user_id
+msgid "Responsible User"
+msgstr "Người phụ trách"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__kiosk_payment__state__send_email
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_payment_view_form
+msgid "Send Email"
+msgstr "Gửi Email"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__start_date
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__start_date
+msgid "Start Date"
+msgstr "Ngày bắt đầu"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__state
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__activity_state
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__type
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__type
+msgid "Type"
+msgstr "Loại"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_contract__activity_exception_decoration
+#: model:ir.model.fields,help:sun_kiosk_rental.field_kiosk_payment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_cost_type__price
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment_line__price
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_unread
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_contract__message_unread_counter
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_payment__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:res.groups,name:sun_kiosk_rental.sun_kiosk_rental_group_user
+msgid "User"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:res.groups,comment:sun_kiosk_rental.sun_kiosk_rental_group_admin
+msgid "Users belong to this group can control this application"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:res.groups,comment:sun_kiosk_rental.sun_kiosk_rental_group_user
+msgid "Users belong to this group can use this application"
+msgstr ""
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_contract_cost_type__value
+msgid "Value"
+msgstr "Giá trị"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields.selection,name:sun_kiosk_rental.selection__cost_type__type__water
+msgid "Water"
+msgstr "Nước"
+
+#. module: sun_kiosk_rental
+#: model_terms:ir.ui.view,arch_db:sun_kiosk_rental.kiosk_kiosk_view_form
+msgid "Water Number"
+msgstr "Số nước"
+
+#. module: sun_kiosk_rental
+#: model:ir.model.fields,field_description:sun_kiosk_rental.field_kiosk_kiosk__water_number_count
+msgid "Water Number Count"
+msgstr "Số phiếu nước"
