@@ -1,0 +1,56 @@
+<odoo>
+    <record id="contract_cost_type_view_tree" model="ir.ui.view">
+        <field name="name">contract.cost.type.tree</field>
+        <field name="model">contract.cost.type</field>
+        <field name="arch" type="xml">
+            <tree string="Contract Cost Type Tree">
+                <field name="cost_type_id" optional="show"/>
+                <field name="type" optional="show"/>
+                <field name="name" optional="show"/>
+                <field name="value" optional="show"/>
+                <field name="kiosk_contract_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="contract_cost_type_view_form" model="ir.ui.view">
+        <field name="name">contract.cost.type.form</field>
+        <field name="model">contract.cost.type</field>
+        <field name="arch" type="xml">
+            <form string="Contract Cost Type Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="type" />
+                        </group>
+                        <group>
+                            <field name="value" />
+                            <field name="kiosk_contract_id" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="contract_cost_type_view_search" model="ir.ui.view">
+        <field name="name">contract.cost.type.search</field>
+        <field name="model">contract.cost.type</field>
+        <field name="arch" type="xml">
+            <search string="Contract Cost Type Search">
+                <field name="name" />
+                <field name="kiosk_contract_id" />
+                <group expand="0" string="Group By">
+                    <filter string="Kiosk Contract" name="grp_kiosk_contract" context="{'group_by': 'kiosk_contract_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="contract_cost_type_action" model="ir.actions.act_window">
+        <field name="name">Contract Cost Type</field>
+        <field name="res_model">contract.cost.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

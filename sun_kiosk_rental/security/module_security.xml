@@ -1,0 +1,24 @@
+<odoo>
+	<data>
+		<record id="module_kiosk_rental_category" model="ir.module.category">
+			<field name="name">Kiosk Rental</field>
+			<field name="description">Helps you manage your kiosk rental.</field>
+			<field name="sequence">10</field>
+		</record>
+
+		<record id="sun_kiosk_rental_group_user" model="res.groups">
+			<field name="name">User</field>
+			<field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+			<field name="category_id" ref="module_kiosk_rental_category" />
+			<field name="comment">Users belong to this group can use this application</field>
+		</record>
+		
+		<record id="sun_kiosk_rental_group_admin" model="res.groups">
+			<field name="name">Administrator</field>
+			<field name="implied_ids" eval="[(4, ref('sun_kiosk_rental_group_user'))]" />
+			<field name="category_id" ref="module_kiosk_rental_category" />
+			<field name="users" eval="[(4, ref('base.user_root')),(4, ref('base.user_admin'))]" />
+			<field name="comment">Users belong to this group can control this application</field>
+		</record>
+	</data>
+</odoo>

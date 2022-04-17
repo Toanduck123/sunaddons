@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_contract_cost_type_user,contract.cost.type user,model_contract_cost_type,sun_kiosk_rental_group_user,1,1,1,1
+access_cost_type_user,cost.type user,model_cost_type,sun_kiosk_rental_group_user,1,0,0,0
+access_cost_type_admin,cost.type admin,model_cost_type,sun_kiosk_rental_group_admin,1,1,1,1
+access_kiosk_contract_user,kiosk.contract user,model_kiosk_contract,sun_kiosk_rental_group_user,1,1,1,0
+access_kiosk_contract_admin,kiosk.contract admin,model_kiosk_contract,sun_kiosk_rental_group_admin,1,1,1,1
+access_kiosk_payment_user,kiosk.payment user,model_kiosk_payment,sun_kiosk_rental_group_user,1,0,0,0
+access_kiosk_payment_admin,kiosk.payment user,model_kiosk_payment,sun_kiosk_rental_group_admin,1,1,1,1
+access_kiosk_payment_line_user,kiosk.payment.line user,model_kiosk_payment_line,sun_kiosk_rental_group_user,1,1,1,1
+access_kiosk_kiosk_user,kiosk.kiosk user,model_kiosk_kiosk,sun_kiosk_rental_group_user,1,0,0,0
+access_kiosk_kiosk_admin,kiosk.kiosk user,model_kiosk_kiosk,sun_kiosk_rental_group_user,1,1,1,1
+access_kiosk_water_number_user,kiosk.water.number user,model_kiosk_water_number,sun_kiosk_rental_group_user,1,1,1,0
+access_kiosk_water_number_admin,kiosk.water.number user,model_kiosk_water_number,sun_kiosk_rental_group_admin,1,1,1,1
+access_kiosk_electric_number_user,kiosk.electric.number user,model_kiosk_electric_number,sun_kiosk_rental_group_user,1,1,1,0
+access_kiosk_electric_number_admin,kiosk.electric.number user,model_kiosk_electric_number,sun_kiosk_rental_group_user,1,1,1,1
