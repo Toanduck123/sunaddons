@@ -1,0 +1,41 @@
+<odoo>
+    <record id="kiosk_water_number_view_tree" model="ir.ui.view">
+        <field name="name">kiosk.water.number.tree</field>
+        <field name="model">kiosk.water.number</field>
+        <field name="arch" type="xml">
+            <tree string="Kiosk Water Number Tree" editable="bottom">
+                <field name="kiosk_id" />
+                <field name="name" />
+                <field name="date" />
+                <field name="number" />
+                <field name="user_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="kiosk_water_number_view_search" model="ir.ui.view">
+        <field name="name">kiosk.water.number.search</field>
+        <field name="model">kiosk.water.number</field>
+        <field name="arch" type="xml">
+            <search string="Kiosk Water Number Search">
+                <field name="name" />
+                <field name="user_id" />
+                <group expand="0" string="Group By">
+                    <filter string="Employee" name="grp_user" context="{'group_by': 'user_id'}" />
+                    <filter string="Kiosk" name="grp_kiosk" context="{'group_by': 'kiosk_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="kiosk_water_number_action" model="ir.actions.act_window">
+        <field name="name">Kiosk Water Number</field>
+        <field name="res_model">kiosk.water.number</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="kiosk_water_number_menu"
+     parent="kiosk_menu_root"
+     action="kiosk_water_number_action"
+     sequence="50" />
+</odoo>

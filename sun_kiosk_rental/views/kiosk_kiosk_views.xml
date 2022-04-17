@@ -1,0 +1,63 @@
+<odoo>
+    <record id="kiosk_kiosk_view_tree" model="ir.ui.view">
+        <field name="name">kiosk.kiosk.tree</field>
+        <field name="model">kiosk.kiosk</field>
+        <field name="arch" type="xml">
+            <tree string="Kiosk Tree">
+                <field name="name" optional="show"/>
+                <field name="code" optional="show"/>
+                <field name="amount" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="kiosk_kiosk_view_form" model="ir.ui.view">
+        <field name="name">kiosk.kiosk.form</field>
+        <field name="model">kiosk.kiosk</field>
+        <field name="arch" type="xml">
+            <form string="Kiosk Form">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" type="object" name="action_view_kiosk_electric_number" icon="fa-th-list">
+                            <field string="Electric Number" name="electric_number_count" widget="statinfo" />
+                        </button>
+                        <button class="oe_stat_button" type="object" name="action_view_kiosk_water_number" icon="fa-th">
+                            <field string="Water Number" name="water_number_count" widget="statinfo" />
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="code" />
+                        </group>
+                        <group>
+                            <field name="amount" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="kiosk_kiosk_view_search" model="ir.ui.view">
+        <field name="name">kiosk.kiosk.search</field>
+        <field name="model">kiosk.kiosk</field>
+        <field name="arch" type="xml">
+            <search string="Kiosk Search">
+                <field name="name" />
+                <field name="code" />
+            </search>
+        </field>
+    </record>
+
+    <record id="kiosk_kiosk_action" model="ir.actions.act_window">
+        <field name="name">Kiosk</field>
+        <field name="res_model">kiosk.kiosk</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="kiosk_kiosk_menu"
+     parent="kiosk_menu_root"
+     action="kiosk_kiosk_action"
+     sequence="10" />
+</odoo>

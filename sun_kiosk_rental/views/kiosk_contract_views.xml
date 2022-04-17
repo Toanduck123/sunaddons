@@ -1,0 +1,95 @@
+<odoo>
+    <record id="kiosk_contract_view_tree" model="ir.ui.view">
+        <field name="name">kiosk.contract.tree</field>
+        <field name="model">kiosk.contract</field>
+        <field name="arch" type="xml">
+            <tree string="Kiosk Contract Tree">
+                <field name="name" optional="show" />
+                <field name="partner_id" optional="show" />
+                <field name="kiosk_id" optional="show" />
+                <field name="representer_id" optional="hide" />
+                <field name="amount" optional="hide" />
+                <field name="start_date" optional="hide" />
+                <field name="end_date" optional="hide" />
+                <field name="state" optional="show" />
+                <field name="contract_duration" optional="hide" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="kiosk_contract_view_form" model="ir.ui.view">
+        <field name="name">kiosk.contract.form</field>
+        <field name="model">kiosk.contract</field>
+        <field name="arch" type="xml">
+            <form string="Kiosk Contract Form">
+                <header>
+                    <button name="action_open" string="Confirm" class="btn-primary" type="object" />
+                    <button name="action_close" string="Close" type="object" />
+                    <button name="action_draft" string="Reset To Draft" type="object" />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="start_date" />
+                            <field name="partner_id" />
+                            <field name="contract_duration" />
+                        </group>
+                        <group>
+                            <field name="kiosk_id" />
+                            <field name="end_date" />
+                            <field name="representer_id" />
+                            <field name="amount" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="List Cost Type">
+                            <field name="cost_type_ids" >
+                                <tree editable="bottom" >
+                                    <field name="cost_type_id"/>
+                                    <field name="name" string="Description"/>
+                                    <field name="type" />
+                                    <field name="value" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="kiosk_contract_view_search" model="ir.ui.view">
+        <field name="name">kiosk.contract.search</field>
+        <field name="model">kiosk.contract</field>
+        <field name="arch" type="xml">
+            <search string="Kiosk Contract Search">
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="kiosk_id" />
+                <group expand="0" string="Group By">
+                    <filter string="Customer" name="grp_partner" context="{'group_by': 'partner_id'}" />
+                    <filter string="Kiosk" name="grp_kiosk" context="{'group_by': 'kiosk_id'}" />
+                    <filter string="Representer" name="grp_representer_id" context="{'group_by': 'representer_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="kiosk_contract_action" model="ir.actions.act_window">
+        <field name="name">Kiosk Contract</field>
+        <field name="res_model">kiosk.contract</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="kiosk_contract_menu"
+     parent="kiosk_management_menu_root"
+     action="kiosk_contract_action"
+     sequence="10" />
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+    <record id="kiosk_customer_rental_action" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem id="kiosk_customer_rental_menu" 
+    action="kiosk_customer_rental_action" 
+    parent="kiosk_management_menu_root" 
+    name="Customers" 
+    sequence="30" />
+</odoo>

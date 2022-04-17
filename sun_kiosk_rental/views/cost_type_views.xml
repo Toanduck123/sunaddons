@@ -1,0 +1,59 @@
+<odoo>
+    <record id="cost_type_view_tree" model="ir.ui.view">
+        <field name="name">cost.type.tree</field>
+        <field name="model">cost.type</field>
+        <field name="arch" type="xml">
+            <tree string="Cost Type Tree">
+                <field name="name" optional="show" />
+                <field name="type" optional="show" />
+                <field name="price" optional="show" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="cost_type_view_form" model="ir.ui.view">
+        <field name="name">cost.type.form</field>
+        <field name="model">cost.type</field>
+        <field name="arch" type="xml">
+            <form string="Cost Type Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="type" />
+                        </group>
+                        <group>
+                            <field name="price" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="cost_type_view_search" model="ir.ui.view">
+        <field name="name">cost.type.search</field>
+        <field name="model">cost.type</field>
+        <field name="arch" type="xml">
+            <search string="Cost Type Search">
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+
+    <record id="cost_type_action" model="ir.actions.act_window">
+        <field name="name">Cost Type</field>
+        <field name="res_model">cost.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="cost_type_menu"
+     parent="kiosk_rental_configuration_menu_root"
+     action="cost_type_action"
+     sequence="10" />
+</odoo>

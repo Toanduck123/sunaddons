@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record id="report_kiosk_payment" model="ir.actions.report">
+            <field name="name">Payment Report</field>
+            <field name="model">kiosk.payment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sun_kiosk_rental.report_sun_kiosk_payment</field>
+            <field name="report_file">sun_kiosk_rental.report_sun_kiosk_payment</field>
+            <field name="print_report_name">'Payment - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="model_kiosk_payment"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

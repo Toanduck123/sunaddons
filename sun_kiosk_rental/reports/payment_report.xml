@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_sun_kiosk_payment">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="mb16 text-center">
+                            <h3>
+                                <span>KIOSK Payment </span>
+                            </h3>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class='row'>
+                            <div class='col-4' t-if='o.name'>
+                                No: 
+                                <span t-field="o.name" />
+                            </div>
+                            <div class='col-4' t-if='o.start_date'>
+                                Date From: 
+                                <span t-field="o.start_date" />
+                            </div>
+                            <div class='col-4' t-if='o.end_date'>
+                                Date To: 
+                                <span t-field="o.end_date" />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-8' t-if='o.partner_id'>
+                                Customer:
+                                <span t-field="o.partner_id.name" />
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead class='bg-light'>
+                                <tr>
+                                    <th class="text-center align-middle" style="width: 15%">Cost Type</th>
+                                    <th class="text-center align-middle" style="width: 55%">Description</th>
+                                    <th class="text-center align-middle" style="width: 15%">Quantity</th>
+                                    <th class="text-center align-middle" style="width: 15%">Unit Price</th>
+                                    <th class="text-center align-middle" style="width: 15%">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.kiosk_payment_line_ids" t-as='line'>
+                                    <tr>
+                                        <td>
+                                            <span t-esc='line.cost_type_id.name' />
+                                        </td>
+                                        <td>
+                                            <t t-if="line.name">
+                                                <span t-field='line.name' />
+                                            </t>
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-field='line.quantity' />
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-field='line.price' t-options='{"widget": "float", "precision": 0}' />
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-field='line.sub_amount_total' t-options='{"widget": "float", "precision": 0}' />
+                                        </td>
+                                    </tr>
+                                </t>
+                                <tr t-if='o.amount_total' class="text-right">
+                                    <td colspan="4" class="text-center">
+                                        <b>Total</b>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            <span t-esc="o.amount_total" t-options='{"widget": "float", "precision": 0}' />
+                                        </b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                  </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
