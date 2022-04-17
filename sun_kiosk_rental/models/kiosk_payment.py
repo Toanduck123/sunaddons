@@ -7,7 +7,8 @@ class KioskPayment(models.Model):
     _description = "Kiosk Payment"
     
     name = fields.Char(string='Name', required=True, tracking=True)
-    kiosk_contract_id = fields.Many2one('kiosk.contract', string='Kiosk Contract', required=True, tracking=True)
+    kiosk_contract_id = fields.Many2one('kiosk.contract', string='Kiosk Contract', domain="[('state', '=', 'opened')]",
+                                        required=True, tracking=True)
     kiosk_id = fields.Many2one(related='kiosk_contract_id.kiosk_id')
     partner_id = fields.Many2one(related='kiosk_contract_id.partner_id')
     start_date = fields.Date(string='Start Date', default=fields.Date.today().replace(day=1), required=True, tracking=True)
